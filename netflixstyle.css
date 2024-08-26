@@ -1,0 +1,479 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "roboto", "sans-serif";
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+:root {
+    --scwidth: 100vw;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+h1,h2,h3{
+    font-family: "Archivo black","roboto","sans-serif";
+}
+
+.n1 {
+    width: 100vw;
+    border: none;
+    height: 700px;
+    position: relative;
+}
+
+.mainbackground {
+    background-image: url("/Web Clones/Assets/Img/allbanner_netflix.jpg");
+    background-position: center center;
+    background-size: max(100vw, 1300px);
+    height: 100%;
+    width: 100vw;
+    opacity: 0.4;
+    z-index: -10;
+}
+
+.mainforeground {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+nav {
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.n1 img {
+    width: 150px;
+    height: 70px;
+}
+
+.navbuttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.language {
+    width: 115px;
+    box-sizing: border-box;
+    height: 35px;
+    right: 300px;
+    padding-left: 24.5px;
+    border-radius: 4px 4px;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.signin {
+    border: none;
+    border-radius: 4px 4px;
+    box-shadow: none;
+    background-color: rgb(220, 0, 0);
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+.signin:hover {
+    transition-duration: 0.15s;
+    transition-delay: 0.125s;
+    background-color: rgb(190, 0, 0);
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.maintext>* {
+    margin: 12px;
+}
+
+.maintext h1 {
+    font-family: "Archivo black","roboto", "sans-serif";
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin:12px;
+}
+
+.maintext p {
+    font-family: "baloo bhai 2", "roboto", "sans-serif";
+    font-size: 1.6rem;
+    margin:10px;
+}
+
+.mainu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.mainu p{
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+.mainbuttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbuttons textarea {
+    background-color: rgb(30, 30, 30);
+    box-sizing: border-box;
+    width: 250px;
+    height: 56px;
+    resize: none;
+    padding: 18px;
+    margin-right: 8px;
+}
+
+.getstarted {
+    border-radius: 3px 3px;
+    box-shadow: none;
+    border: none;
+    padding: 8px 16px 8px 16px;
+    background-color: rgb(220, 0, 0);
+    width: 200px;
+    height: 56px;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.getstarted:hover {
+    transition-duration: 0.15s;
+    transition-delay: 0.125s;
+    background-color: rgb(190, 0, 0);
+}
+
+.block {
+    width: 100vw;
+    height: 700px;
+    border-top: solid 7px rgb(44, 44, 44);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.textblock{
+    width: 40vw;
+}
+
+.textblock h3 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.textblock p {
+    font-size: 1.5rem;
+    font-family: "baloo bhai 2", "roboto", "sans-serif";
+    margin-bottom: 10px;
+}
+
+.pictureblock{
+    position: relative;
+}
+
+.pictureblock img {
+    width: 40vw;
+    z-index: 1;
+}
+
+.pictureblock video{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+
+.n2 video{
+    width: 73%;
+    top:20%;
+    left:13%;
+    z-index: -1;
+}
+
+.n4 video {
+    width: 61%;
+    top: 12%;
+    left: 18.5%;
+    z-index: -1;
+}
+
+.n6 {
+    height:1000px;
+    width: 100vw;   
+    justify-content: center;
+    align-items: center;
+}
+
+.marginbox {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.n6 .marginbox>* {
+    margin: 20px;
+}
+
+.n6 h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.n6 .mainu{
+    width: 100%;
+}
+
+.mainu p{
+    width: 100%;
+    text-align: center;
+}
+
+.n6 ul {
+    width: 100%;
+    list-style: none;
+}
+
+.n6 li {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(55, 55, 55);
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.n6 li :nth-child(2){
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.n6 li:hover {
+    background-color: rgb(75, 75, 75);
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.n7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 400px;
+    border-top: solid 7px rgb(44, 44, 44);
+}
+
+.others {
+    width: 80%;
+}
+
+.others>* {
+    margin-bottom: 20px;
+}
+
+.questions {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+}
+
+.questions span {
+    color: rgb(180, 180, 180);
+}
+
+.questions p :nth-child(2) {
+    text-decoration: underline;
+}
+
+.others ul {
+    list-style: none;
+}
+
+.others li {
+    display: inline-block;
+    width: 200px;
+    color: rgb(180, 180, 180);
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.others li:hover {
+    cursor: pointer;
+}
+
+.others p {
+    color: rgb(180, 180, 180);
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .n6 li :nth-child(1){
+        font-size: 0.9rem;
+    }
+
+    .n6 li :nth-child(2){
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .maintext h1{
+        font-size: 1.75rem;
+    }
+
+    .maintext p{
+        font-size: 1.2rem;
+    }
+    
+    .mainbuttons {
+        flex-direction: column;
+    }
+
+    .mainu p{
+        font-size: 1rem;
+    }
+
+    .mainbuttons textarea {
+        margin-top: 0px;
+        margin-bottom: 16px;
+        width: 80vw;
+        height: 46px;
+        padding: 14px;
+        padding-left: 18px;
+    }
+
+    .mainbuttons button{
+        height:46;
+    }
+
+    .others li {
+        width: 40%;
+    }
+
+    .n7{
+        height:650px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .mainbuttons textarea {
+        width: min(41.66vw, 360px);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .block{
+        height:800px;
+    }
+    .n6{
+        height:1000px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .n2,
+    .n4 {
+        flex-direction: column;
+    }
+
+    .n3,
+    .n5 {
+        flex-direction: column-reverse;
+    }
+
+    .textblock {
+        margin: 15px;
+        text-align: center;
+        width: 80vw;
+    }
+    
+    .textblock h3{
+        font-size: 2rem;
+    }
+
+    .textblock p{
+        font-size: 1rem;
+    }
+
+    .pictureblock img{
+        width: 80vw;
+    }
+
+    .n6 h3{
+        font-size: 2rem;
+    }
+
+    .n6 p{
+        font-size: 1 rem;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:959px){
+    .n7{
+        height:500px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    nav {
+        padding: 0px 170px 0px 170px;
+    }
+}
